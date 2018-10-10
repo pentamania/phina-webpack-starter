@@ -1,0 +1,30 @@
+{
+  "name": "phina-webpack-starter",
+  "version": "1.0.0",
+  "description": "phina.js development kit using webpack",
+  "main": "src/entry.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server",
+    "link": "node npm-link-global.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "phina.js",
+    "webpack"
+  ],
+  "author": "your name",
+  "license": "NYSL",
+  "dependencies": {
+    "phina.js": "^0.2.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.x",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
