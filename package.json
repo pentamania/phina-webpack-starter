@@ -4,6 +4,7 @@
   "description": "phina.js development kit using webpack",
   "main": "src/entry.js",
   "scripts": {
+    "start": "webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack-dev-server",
     "link": "node npm-link-global.js",
