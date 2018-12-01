@@ -1,7 +1,7 @@
 import phina from 'phina.js';
 import ph from 'shorthand';
 
-export var Mainscene = phina.define('MainScene', {
+phina.define('MainScene', {
   superClass: phina.display.DisplayScene,
 
   init: function(options) {
@@ -25,4 +25,5 @@ export var Mainscene = phina.define('MainScene', {
       this.player.setPosition(p.x, p.y);
     }
   },
+
 });

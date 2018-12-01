@@ -1,5 +1,5 @@
 import phina from 'phina.js';
-import 'scenes/index.js'; // sceneをまとめてロード
+import 'scenes/MainScene.js';
 import * as config from 'config';
 
 /* globalizeはどこかで一度でも実行していれば有効 */
