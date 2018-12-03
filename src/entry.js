@@ -5,6 +5,9 @@ import * as config from 'config';
 /* globalizeはどこかで一度でも実行していれば有効 */
 // phina.globalize();
 
+// webpackからパラメータ受け取る
+console.log("アプリバージョン：", ENV_APP_VERSION);
+
 phina.main(function() {
   var app = phina.game.GameApp({
     startLabel: 'main',

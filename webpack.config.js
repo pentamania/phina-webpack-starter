@@ -11,15 +11,22 @@ const outputDirectory = path.resolve("dist");
 
 /* プラグイン設定 */
 const plugins = [
-  // dist index.htmlの生成
+
+  // dist/index.htmlの生成
   new HtmlWebpackPlugin({
     title: package.name,
     author: package.author,
     template: 'src/index.html',
   }),
+
+  // アプリに環境変数等を渡す
+  new webpack.DefinePlugin({
+    ENV_IS_DEV: JSON.stringify(!isProduction),
+    ENV_APP_VERSION: JSON.stringify(package.version),
+  }),
 ];
 if (isProduction) {
-  // clean
+  // 出力先clean
   plugins.push(new CleanWebpackPlugin(outputDirectory))
 }
 
