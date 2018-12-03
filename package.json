@@ -1,6 +1,6 @@
 {
   "name": "phina-webpack-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "phina.js development kit using webpack",
   "main": "src/entry.js",
   "scripts": {
