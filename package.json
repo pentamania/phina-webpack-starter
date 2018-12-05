@@ -1,5 +1,6 @@
 {
   "name": "phina-webpack-starter",
+  "title": "phina.js Cool Game",
   "version": "1.0.1",
   "description": "phina.js development kit using webpack",
   "main": "src/entry.js",

@@ -14,7 +14,7 @@ const plugins = [
 
   // dist/index.htmlの生成
   new HtmlWebpackPlugin({
-    title: package.name,
+    title: package.title,
     author: package.author,
     template: 'src/index.html',
   }),
