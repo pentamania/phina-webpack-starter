@@ -9,6 +9,11 @@ const isProduction = (process.env.NODE_ENV != null && process.env.NODE_ENV.trim(
 const buildMode = (isProduction) ? "production" : "development";
 const outputDirectory = path.resolve("dist");
 
+/* ローカルサーバー設定 */
+const hostIp = '0.0.0.0'; // デフォルトではローカルIPを使用
+const portNum = null; // ポート番号
+const autoOpenBrowser = true; // ローカルサーバー起動時、ブラウザを開く
+
 /* プラグイン設定 */
 const plugins = [
 
@@ -93,8 +98,10 @@ module.exports = {
   /* 開発用サーバー設定 */
   devServer: {
     contentBase: outputDirectory, // 出力先と同じであること
-    open: true, // ブラウザを開く
-    // port: 8787 // ポート番号
+    useLocalIp: (hostIp === '0.0.0.0') ? true : false,
+    host: hostIp,
+    port: portNum,
+    open: autoOpenBrowser,
   },
 
 };
