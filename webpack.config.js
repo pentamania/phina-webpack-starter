@@ -74,19 +74,20 @@ module.exports = {
     rules: [
       {
         /**
-         * アセットの出力は基本はURL（キャッシュ対策のため、ハッシュ値をつける）
-         * ./出力先/assets/ファイル名.拡張子?ハッシュ値
+         * アセットファイルをrequireした場合、基本はURLパスを返す
+         * 出力先： ./dist/assets/ファイル名.拡張子
          */
-        test: /\.(png|jpg|jpeg|gif|mp3|wav|ogg|json|txt|xml)$/,
+        test: /\.(png|jpg|jpeg|gif|mp3|wav|ogg|txt|xml)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: 'assets/[name].[ext]?[hash]',
+              // name: 'assets/[name].[ext]?[hash]', // キャッシュ対策のため、ハッシュ値をつける場合
+              name: 'assets/[name].[ext]',
             }
           }
         ]
-      }
+      },
     ]
   },
 
