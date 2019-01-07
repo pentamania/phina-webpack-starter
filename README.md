@@ -1,4 +1,6 @@
-# phina-webpack-starter
+phina-webpack-starter
+===
+
 phina.js template project using webpack 4.
 
 ## Initial setup
@@ -6,20 +8,16 @@ phina.js template project using webpack 4.
 2. Open terminal and move to the project directory.
 3. ```npm install```
 
-or if you want to use your own global installed packages, run
-
-```npm run link```
-
 ## Develop
 ```npm start```
 
-This will start local-server and browser.  
+This will start local-server and browser.
 The browser will be reloaded by file change.
 
 ## Production
 ```npm run build```
 
-This will create optimized files in dist folder for deploy.
+This will create optimized files in ```dist``` folder.
 
-Don't forget to change 'name' and 'author' in package.json, 
+Don't forget to change 'name' and 'author' in package.json,
 because it will be used in dist/index.html

@@ -8,7 +8,6 @@
     "start": "webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack-dev-server",
-    "link": "node npm-link-global.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
